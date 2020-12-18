@@ -1,0 +1,146 @@
+<style>
+
+.search-select {
+  width: 150px;
+  margin-left: 20px;
+  border-color: #CCCED8;
+  font-family: Fabriga, Sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color:#717786;
+}
+
+#search-offices {
+  margin-right: 20px;
+}
+
+#search-query {
+  padding: 0 30px 0 40px;color: #717786;
+  border-color: #CCCED8;
+  padding: 11px 15px 8px 40px;
+  border-width: 1px 1px 1px 1px;font-family: Fabriga, Sans-serif;font-weight: 300; font-size: 14px; color:#717786;
+}
+
+#search-button {
+  background-color: #F71963;
+  padding: 15px 25px 15px 25px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+}
+
+.search-box {
+  flex: 1 1 auto;
+  display: flex;
+  border-color: rgb(51,51,51);
+}
+
+.search-box > span {
+  font-size: 15px;
+  color: #CCCED8;
+  display: inline-block;
+  left: 15px;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1em;
+}
+</style>
+
+<div style="display: flex;font-family: Fabriga, Sans-serif;font-weight: 300;">
+  <div style="flex: 1 1 auto; display: flex;">
+    <div class="search-box">
+      <span>
+        <i aria-hidden="true" class="fas fa-search"></i>
+      </span>
+      <input type="text" placeholder="Search Job Title" id="search-query">
+    </div>
+
+    <select id="search-teams" class="search-select">
+      <option disabled selected value="">Teams</option>
+
+      <option value=",">All teams</option>
+
+      <optgroup label="Brand">
+        <option value=",Brand">Brand</option>
+      </optgroup>
+
+      <optgroup label="Engineering">
+        <option value="Engineering,Engineering">Engineering</option>
+      </optgroup>
+
+      <optgroup label="Finances">
+        <option value="Finances,">All jobs</option>
+        <option value="Finances,Controllership International">Controllership International</option>
+        <option value="Finances,Controllership">Controllership</option>
+        <option value="Finances,Financial">Financial</option>
+      </optgroup>
+
+      <optgroup label="Growth">
+        <option value="Growth,">All jobs</option>
+        <option value="Growth,CX - Excellence">CX - Excellence</option>
+        <option value="Growth,CX - Projects">CX - Projects</option>
+        <option value="Growth,CX - Success">CX - Success</option>
+        <option value="Growth,Enablement">Enablement</option>
+        <option value="Growth,Growth Operations">Growth Operations</option>
+        <option value="Growth,Marketing">Marketing</option>
+        <option value="Growth,Partner Experience">Partner Experience</option>
+        <option value="Growth,Sales">Sales</option>
+        <option value="Growth,VTEX Log">VTEX Log</option>
+      </optgroup>
+
+      <optgroup label="Loja Integrada">
+        <option value="Loja Integrada,">All jobs</option>
+        <option value="Loja Integrada,Finance">Finance</option>
+        <option value="Loja Integrada,Growth">Growth</option>
+        <option value="Loja Integrada,Product">Product</option>
+      </optgroup>
+
+      <optgroup label="People and Places">
+        <option value="People and Places,">All jobs</option>
+        <option value="People and Places,Employer Branding">Employer Branding</option>
+        <option value="People and Places,Talent Acquisition">Talent
+        Acquisition</option>
+      </optgroup>
+
+      <optgroup label="Product">
+        <option value="Product,">All jobs</option>
+        <option value="Product,Localization">Localization</option>
+        <option value="Product,Product Design">Product Design</option>
+        <option value="Product,Product Management">Product Management</option>
+        <option value="Product,Value Added Services">Value Added Services</option>
+      </optgroup>
+
+    </select>
+
+    <select id="search-offices" class="search-select">
+      <option selected disabled value="">Offices</option>
+      <option value="">All locations</option>
+      <option value="Asunción">Asunción</option>
+      <option value="Barcelona">Barcelona</option>
+      <option value="Bucharest">Bucharest</option>
+      <option value="Buenos Aires">Buenos Aires</option>
+      <option value="Campina Grande">Campina Grande</option>
+      <option value="Curitiba">Curitiba</option>
+      <option value="João Pessoa">João Pessoa</option>
+      <option value="Lima">Lima</option>
+      <option value="Mexico City">Mexico City</option>
+      <option value="Montevidéu">Montevidéu</option>
+      <option value="New York City">New York City</option>
+      <option value="Quito">Quito</option>
+      <option value="Quixadá">Quixadá</option>
+      <option value="Remote">Remote</option>
+      <option value="Rio de Janeiro">Rio de Janeiro</option>
+      <option value="Santa Cruz">Santa Cruz</option>
+      <option value="Santiago">Santiago</option>
+      <option value="Singapore">Singapore</option>
+      <option value="São Paulo">São Paulo</option>
+      <option value="Teresópolis">Teresópolis</option>
+    </select>
+  </div>
+
+  <button type="button" id="search-button">
+    <span class="jet-ajax-search__submit-label">SEARCH JOBS</span>
+  </button>
+</div>
