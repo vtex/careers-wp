@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "wpapi": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0"
+  }
+}
